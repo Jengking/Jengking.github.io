@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Snap Cookd</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --char:   #1A1A18;
+      --saffron:#E8A830;
+      --cream:  #F7F5F0;
+      --smoke:  #2A2A26;
+      --ash:    #8A8A82;
+      --light:  #EDECEF;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--cream);
+      color: var(--char);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--char);
+      padding: 40px 24px 36px;
+      text-align: center;
+    }
+    .logo-ring {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: var(--smoke);
+      margin-bottom: 16px;
+    }
+    .logo-ring svg { width: 36px; height: 36px; }
+    header h1 {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 2rem;
+      color: var(--cream);
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    header h1 span { color: var(--saffron); }
+    header p {
+      color: var(--ash);
+      font-size: 0.875rem;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Effective date badge ── */
+    .badge {
+      display: inline-block;
+      background: var(--saffron);
+      color: var(--char);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 32px;
+    }
+
+    /* ── Intro ── */
+    .intro {
+      background: var(--smoke);
+      color: var(--cream);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      font-size: 0.9375rem;
+      line-height: 1.7;
+    }
+    .intro strong { color: var(--saffron); }
+
+    /* ── Sections ── */
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.3rem;
+      color: var(--char);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid var(--light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--saffron);
+      flex-shrink: 0;
+      font-style: normal;
+      font-size: 0.8rem;
+    }
+
+    p { margin-bottom: 14px; color: var(--char); }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 0 0 14px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 0.5px solid var(--light);
+      font-size: 0.9375rem;
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--saffron);
+    }
+
+    /* ── Info card ── */
+    .card {
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin-bottom: 14px;
+      font-size: 0.9375rem;
+    }
+    .card.green  { background: #D4EDDA; color: #27500A; }
+    .card.amber  { background: #FAEEDA; color: #633806; }
+    .card.neutral{ background: var(--light); color: var(--char); }
+    .card strong { display: block; margin-bottom: 4px; font-size: 0.8125rem; letter-spacing: 0.4px; text-transform: uppercase; }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin-bottom: 14px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th {
+      background: var(--char);
+      color: var(--cream);
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 500;
+      font-size: 0.8125rem;
+      letter-spacing: 0.3px;
+    }
+    th:first-child { border-radius: 8px 0 0 0; }
+    th:last-child  { border-radius: 0 8px 0 0; }
+    td {
+      padding: 10px 14px;
+      border-bottom: 0.5px solid var(--light);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #F9F8F6; }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: var(--char);
+      color: var(--cream);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+    }
+    .contact-box h3 {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--saffron);
+    }
+    .contact-box p { color: #A8A8A0; font-size: 0.9rem; }
+    .contact-box a {
+      color: var(--saffron);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8125rem;
+      color: var(--ash);
+      border-top: 0.5px solid var(--light);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      main { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════════ -->
+<header>
+  <div class="logo-ring">
+    <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="22" r="11" stroke="#F7F5F0" stroke-width="2"/>
+      <circle cx="18" cy="22" r="6"  stroke="#F7F5F0" stroke-width="2" fill="none"/>
+      <circle cx="18" cy="22" r="2.2" fill="#F7F5F0"/>
+      <line x1="18" y1="4"  x2="18" y2="11" stroke="#E8A830" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="13" y1="4"  x2="13" y2="9"  stroke="#E8A830" stroke-width="2"   stroke-linecap="round"/>
+      <line x1="23" y1="4"  x2="23" y2="9"  stroke="#E8A830" stroke-width="2"   stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h1>snap <span>cookd</span></h1>
+  <p>Privacy Policy</p>
+</header>
+
+
+<!-- ══════════════════════════════════════════════════
+     MAIN CONTENT
+══════════════════════════════════════════════════ -->
+<main>
+
+  <div class="badge">Effective Date: 28 March 2026</div>
+
+  <!-- Intro -->
+  <div class="intro">
+    This Privacy Policy explains how <strong>Snap Cookd</strong> ("we", "us", "our") handles
+    information when you use our Android application. We have written this document in plain language
+    so you can understand exactly what data we collect, why we collect it, and how we use it.
+    We believe in transparency — if anything is unclear, please contact us.
+  </div>
+
+
+  <!-- 1. Who We Are -->
+  <section>
+    <h2><span class="icon">1</span> Who We Are</h2>
+    <p>
+      Snap Cookd is an independent app developed and published on the Google Play Store.
+      The app is a Food &amp; Drink utility that uses artificial intelligence to identify
+      ingredients from a photo and suggest meal ideas. We are a solo developer based in Malaysia.
+    </p>
+    <p>
+      For any privacy-related enquiries, please contact us at the address listed at the
+      bottom of this policy.
+    </p>
+  </section>
+
+
+  <!-- 2. Information We Collect -->
+  <section>
+    <h2><span class="icon">2</span> Information We Collect</h2>
+
+    <div class="card green">
+      <strong>✓ The short version</strong>
+      We do not require an account. We do not collect your name, email address, phone number,
+      or any personally identifiable information. We do not store your photos on our servers.
+    </div>
+
+    <p>The following describes what data is processed when you use Snap Cookd:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Collected?</th>
+            <th>Purpose</th>
+            <th>Stored Where</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camera images</td>
+            <td>Processed temporarily</td>
+            <td>Sent to Google Gemini AI to detect ingredients</td>
+            <td>Not stored. Sent once, discarded after API response</td>
+          </tr>
+          <tr>
+            <td>Scan history</td>
+            <td>Yes</td>
+            <td>So you can revisit past meal ideas</td>
+            <td>On your device only (local storage)</td>
+          </tr>
+          <tr>
+            <td>App settings</td>
+            <td>Yes</td>
+            <td>To remember your preferences (e.g. camera hint toggle)</td>
+            <td>On your device only (SharedPreferences)</td>
+          </tr>
+          <tr>
+            <td>Personal identity</td>
+            <td>No</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Location data</td>
+            <td>No</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Contacts / microphone</td>
+            <td>No</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>Analytics / crash data</td>
+            <td>No</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- 3. Camera Permission -->
+  <section>
+    <h2><span class="icon">3</span> Camera Permission</h2>
+    <p>
+      Snap Cookd requests access to your device camera solely to capture photos of ingredients
+      laid out on a surface. The camera is only activated when you initiate a scan — we never
+      access the camera in the background.
+    </p>
+    <p>
+      Photos captured by the app are:
+    </p>
+    <ul>
+      <li>Sent securely to the Google Gemini AI API (via HTTPS) to identify ingredients</li>
+      <li>Not stored on our servers — we have no server infrastructure of our own</li>
+      <li>Not added to your device photo gallery unless you explicitly save them</li>
+      <li>Discarded immediately after the AI response is received</li>
+    </ul>
+    <div class="card neutral">
+      You can revoke camera permission at any time via Android Settings → Apps →
+      Snap Cookd → Permissions. Revoking camera access will disable the scanning feature,
+      but the manual ingredient entry feature will continue to work.
+    </div>
+  </section>
+
+
+  <!-- 4. Google Gemini AI -->
+  <section>
+    <h2><span class="icon">4</span> Google Gemini AI (Third-Party Service)</h2>
+    <p>
+      Snap Cookd uses Google's Gemini 2.5 Flash API to power ingredient detection and
+      meal suggestion. When you perform a scan, your photo (or ingredient list) is transmitted
+      to Google's servers for processing.
+    </p>
+    <p>
+      Google's handling of data sent to the Gemini API is governed by Google's own Privacy Policy
+      and Terms of Service. We strongly encourage you to review these documents:
+    </p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      <li><a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google Gemini API Terms of Service</a></li>
+    </ul>
+    <p>
+      We do not control how Google processes data on their infrastructure. By using Snap Cookd,
+      you acknowledge that ingredient scan data is transmitted to Google's Gemini AI service.
+    </p>
+  </section>
+
+
+  <!-- 5. Data Stored on Your Device -->
+  <section>
+    <h2><span class="icon">5</span> Data Stored on Your Device</h2>
+    <p>
+      All data generated by Snap Cookd is stored locally on your Android device.
+      This includes:
+    </p>
+    <ul>
+      <li><strong>Scan history</strong> — a list of your recent ingredient scans and their associated meal suggestions (up to 20 sessions)</li>
+      <li><strong>App preferences</strong> — settings such as the bird's-eye camera hint toggle</li>
+    </ul>
+    <p>
+      This data is never transmitted to us or any third party (except where explicitly described
+      in this policy). You can clear your scan history at any time from within the app by tapping
+      "clear" in the Recent Scans section on the home screen.
+    </p>
+    <p>
+      Uninstalling Snap Cookd from your device will permanently delete all locally stored data.
+    </p>
+  </section>
+
+
+  <!-- 6. Advertising -->
+  <section>
+    <h2><span class="icon">6</span> Advertising</h2>
+
+    <div class="card amber">
+      <strong>⚠ Future advertising notice</strong>
+      Snap Cookd is currently ad-free. However, we may introduce advertising in future versions
+      of the app to help support ongoing development and keep the core features free for all users.
+    </div>
+
+    <p>
+      If and when advertising is introduced, we intend to use <strong>Google AdMob</strong>,
+      Google's mobile advertising platform. AdMob may collect and process certain information
+      about your device and usage behaviour to serve relevant advertisements. This may include:
+    </p>
+    <ul>
+      <li>Device identifiers (such as the Android Advertising ID)</li>
+      <li>Approximate location (derived from IP address)</li>
+      <li>General usage information (e.g. which screens you view)</li>
+      <li>Device characteristics (OS version, screen size, language)</li>
+    </ul>
+    <p>
+      Before any ads are introduced, we will:
+    </p>
+    <ul>
+      <li>Update this Privacy Policy with full details of how advertising data is collected and used</li>
+      <li>Display an in-app notification informing you of the change before it takes effect</li>
+      <li>Update the Google Play Store listing to reflect that the app contains ads</li>
+      <li>Where required by law, present a consent prompt before collecting advertising data</li>
+    </ul>
+    <p>
+      We will never sell your personal data to advertisers. Any advertising data collected
+      by AdMob is governed by Google's Privacy Policy. You can opt out of personalised advertising
+      at any time through your Android device settings under <em>Privacy → Ads</em>.
+    </p>
+  </section>
+
+
+  <!-- 7. Internet Permission -->
+  <section>
+    <h2><span class="icon">7</span> Internet Permission</h2>
+    <p>
+      Snap Cookd requires internet access for one purpose only: to send ingredient data to
+      the Google Gemini AI API and receive meal suggestions in response. No other data is
+      transmitted over the internet during normal app operation.
+    </p>
+    <p>
+      The app does not require an internet connection to browse your scan history, view
+      previously generated recipes, or adjust app settings.
+    </p>
+  </section>
+
+
+  <!-- 8. Children's Privacy -->
+  <section>
+    <h2><span class="icon">8</span> Children's Privacy</h2>
+    <p>
+      Snap Cookd is not directed at children under the age of 13. We do not knowingly
+      collect personal information from children. If you believe a child under 13 has
+      used the app and provided personal information, please contact us and we will take
+      appropriate steps to address the situation.
+    </p>
+  </section>
+
+
+  <!-- 9. Data Security -->
+  <section>
+    <h2><span class="icon">9</span> Data Security</h2>
+    <p>
+      All communications between Snap Cookd and the Google Gemini API are made over
+      HTTPS (TLS encryption). Your ingredient photos are never transmitted over an
+      unencrypted connection.
+    </p>
+    <p>
+      Since we do not collect or store personal data on our own servers, the risk of
+      a data breach affecting your personal information through our systems is minimal.
+      The security of data on your own device is governed by Android's built-in security
+      mechanisms and your device settings.
+    </p>
+  </section>
+
+
+  <!-- 10. Your Rights -->
+  <section>
+    <h2><span class="icon">10</span> Your Rights</h2>
+    <p>
+      Because we do not collect personal data, most data subject rights (such as the right
+      to access, correct, or delete your data from our systems) are not directly applicable —
+      we hold no data about you on our servers.
+    </p>
+    <p>
+      For data stored locally on your device, you have full control:
+    </p>
+    <ul>
+      <li>Clear scan history in the app at any time</li>
+      <li>Revoke camera permission via Android Settings</li>
+      <li>Uninstall the app to remove all local data permanently</li>
+    </ul>
+    <p>
+      For any data processed by Google via the Gemini API, please refer to Google's privacy
+      controls and your Google account settings at
+      <a href="https://myaccount.google.com" target="_blank" rel="noopener">myaccount.google.com</a>.
+    </p>
+  </section>
+
+
+  <!-- 11. Third-Party Services -->
+  <section>
+    <h2><span class="icon">11</span> Third-Party Services</h2>
+    <p>
+      Snap Cookd currently integrates with the following third-party services. Each has
+      its own privacy policy which governs how they handle data:
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Provider</th>
+            <th>Purpose</th>
+            <th>Data sent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gemini AI API</td>
+            <td>Google</td>
+            <td>Ingredient detection and meal suggestions</td>
+            <td>Ingredient photo or text list</td>
+          </tr>
+          <tr>
+            <td>Google Play Services</td>
+            <td>Google</td>
+            <td>App distribution and updates</td>
+            <td>Standard app install metadata</td>
+          </tr>
+          <tr>
+            <td>Google AdMob (planned)</td>
+            <td>Google</td>
+            <td>Advertising (not yet active)</td>
+            <td>Device identifiers, usage data (when enabled)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <!-- 12. Changes to This Policy -->
+  <section>
+    <h2><span class="icon">12</span> Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time — for example, when we add
+      new features, integrate additional third-party services, or when required by law.
+    </p>
+    <p>
+      When we make material changes (such as introducing advertising), we will:
+    </p>
+    <ul>
+      <li>Update the "Effective Date" at the top of this document</li>
+      <li>Notify users via an in-app message before the change takes effect</li>
+      <li>Update the Privacy Policy link on the Google Play Store listing</li>
+    </ul>
+    <p>
+      Continued use of Snap Cookd after any changes to this policy constitutes your
+      acceptance of the updated terms. If you do not agree with the updated policy,
+      please uninstall the application.
+    </p>
+  </section>
+
+
+  <!-- 13. Contact -->
+  <section>
+    <h2><span class="icon">13</span> Contact Us</h2>
+    <div class="contact-box">
+      <h3>Questions about your privacy?</h3>
+      <p style="margin-bottom: 12px;">
+        If you have any questions, concerns, or requests regarding this Privacy Policy
+        or how Snap Cookd handles data, please reach out:
+      </p>
+      <p><strong style="color: var(--cream);">Snap Cookd — Developer</strong></p>
+      <p>
+        Email: <a href="mailto:mfadzleyhud@yahoo.com">mfadzleyhud@yahoo.com</a>
+      </p>
+      <p style="margin-top: 12px; font-size: 0.8125rem;">
+        We aim to respond to all enquiries within 7 business days.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer>
+  <p>© 2026 Snap Cookd. All rights reserved.</p>
+  <p style="margin-top: 4px;">Effective Date: 28 March 2026 · Last Updated: 28 March 2026</p>
+</footer>
+
+</body>
+</html>
